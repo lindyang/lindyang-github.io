@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cupper</title>
+    <link>https://example.com/</link>
+    <description>Recent content on Cupper</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Jul 2023 09:48:31 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Use Markdown</title>
+      <link>https://example.com/how-to-use-markdown/</link>
+      <pubDate>Fri, 14 Jul 2023 09:48:31 +0800</pubDate>
+      
+      <guid>https://example.com/how-to-use-markdown/</guid>
+      <description>https://www.markdownguide.org/basic-syntax/
+h6 ###### h6 h1 h1 === h2 h2 --- First line with two spaces after.
+And the next line.
+First line with the HTML tag after.
+And the next line.
+I just love bold text.
+I just love bold text.
+Loveisbold
+斜体同理, 但是数量为1
+同时出现
+***xxx*** ___xxx___ __*xxx*__ **_xxx_** The quarterly results look great! Revenue was off the chart. Profits were higher than ever. Everything is going according to plan</description>
+    </item>
+    
+  </channel>
+</rss>
