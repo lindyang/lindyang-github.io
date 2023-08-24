@@ -5,18 +5,18 @@ tags: [math]
 ---
 
 ```
-dimitri di米tri
-pantelis 潘泰利斯
-bertsekas   b t sai ks
+Dimitri di米tri
+Pantelis 潘泰利斯
+Bertsekas   b t sai ks
 
-nikos 尼ko斯
+John
+Nikos 尼ko斯
 Tsitsiklis  c c k le s
 
 
-massachusetts
-Athena
+Massachusetts
+Athena  θ
 mechanical  机械的
-
 retrieval   恢复
 bibliographical 书目性的
 stochastic  随机
@@ -44,6 +44,7 @@ bivariate   bai 二元正态分布
 Bernoulli
 Poisson  pwä-ˈsōⁿ- 
 Markov Processes(马尔科夫过程)
+stochastic
 omission
 
 Bayesian    bā-zē-ən 
@@ -54,11 +55,11 @@ supplement  补充
 theoretical  ruai 理论的
 constitute   ˈkän(t)-stə-ˌtüt
 
-recitation  背诵
+recitation  ai  背诵
 calibrate   校准
 supplementary   补充
 stand the test of time  经得起时间的考验
-we are indebted to 我们欠
+we are indebted to  ɪnˈdetɪd 我们欠
 with the student body   与学生团体
 robust
 
@@ -82,10 +83,10 @@ what a sick thought
 moderately  适度地
 such an interpretation is often natural 这种解释往往是很自然的
 roughly 大致
-Iliad and the odyssey
+Iliad and the odyssey   《伊里亚特》和《奥德赛》
 assertion
 prerequisite    前提条件
-dwell
+dwell   唠叨
 empirical    im-ˈpir-i-kəl  经验
 reasoning   推理
 
@@ -100,7 +101,7 @@ countably infinite
 
 "|" such that
 
-expedient   权宜     ik-ˈspē-dē-ənt
+expedient   方便的，权宜     ik-ˈspē-dē-ənt
 conceivably 可以想象地
 disjoint    不相交的
 partition   分割
@@ -116,7 +117,7 @@ converse inclusion  逆包含
 accordance  按照
 likelihood
 
-event subset of sample space
+event:  subset of sample space
 finite nai
 infinite
 dart    镖
@@ -131,13 +132,15 @@ counterpart 对方
 sufficiently    充分地
 subinterval 子区间
 treatment   治疗
-incidentally    顺便
+incidentally    `ci 顺便
 legitimacy
 hinge on the fact   以事实为准
 contradict  顶撞
 deduce  推断
 
 P(AUBUC) = P(A) + P(A^nB) + P(A^nB^nC)
+P(AUB)  = P(A)      + P(A^nB)
+P(B)    = P(AnB)    + P(A^nB)
 
 tractable   容易驾驭的
 tradeoff    权衡

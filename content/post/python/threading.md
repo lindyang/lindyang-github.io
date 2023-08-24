@@ -37,7 +37,7 @@ class TrExec:
         self.ferror = open(f'{ROOT}/ttt/err.txt', 'w')
 
     def read_xlsx(self):
-        self.data_frame = data_frame = pd.read_excel(self.filename, engine='openpyxl')
+        self.data_frame = data_frame = pd.read_excel(self.filename, sheet_name=0, usecols=list(range(3, 11)), engine='openpyxl')
         self.headers = data_frame.keys()
         self.rows = len(data_frame)
 
