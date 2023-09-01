@@ -164,4 +164,125 @@ millennium  千年
 Renaissance
 Girolamo Cardano
 Fermat and pascal   费马和帕斯卡
+empirical   经验
+astronomical    天文
+axiomatic   公理化的
+
+conditional probability of A given B, denoted by P(A|B).
+P(A|B) = numof(AnB) / numof(B)
+P(A|B) = P(AnB) / P(B)
+disjoint
+P(AUC|B) <= P(A|B) + P(C|B)
+P(AnB) = P(B)P(A|B)
+
+pervasively 普遍地
+conservative    保守的
+innovative
+cumbersome  麻烦
+conjunction 连词
+
+P(AnBnC) = P(A)P(B|A)P(C|AnB)
+        = P(A) * `P(AnB)/P(A)` * `P(AnBnC)/P(AnB)`
+
+P(B) = P(A1nB) + ... P(AxnB) (partition)
+    = P(A1)P(B|A1) + ...
+
+Bayes' Rule
+换头公式
+
+
+
+scenario    设想
+decomposed  分解的
+tournament  比赛
+opponent    对手
+celebrated  著名
+malignant   恶性的
+tumor   
+exhaustive  详尽的
+posterior   后部
+
+binomial
+combinatorics
+permutation 排列
+
+
+INDEPENDENCE
+P(A|B) = P(A)
+
+P(AnB) = P(A)P(B)   判断公式
+意味着  P(A|B) = P(A)       B不影响A（P(B) > 0), so as A and B^
+
+Conditional Independence    条件独立
+
+        = P(B|C)P(A|BnC)
+P(AnB|C) = P(A|C)P(B|C)
+意味着 P(A|BnC) = P(A|C)
+
+无条件独立和条件独立不相关
+
+
+两两互相独立，三个独立
+
+homogeneous
+
+1.6 COUNTING
+
+================================================
+2.1
+instrument reading
+
+discrete: finite or countable infinite
+reputedly   据说
+cavalry 骑兵
+Celsius
+Fahrenheit  ˈfærənhaɪt
+logarithmic
+monetary
+converges   集中
+torque  扭矩
+variance    方差
+dispersion  分散
+standard deviation
+概率质量函数
+
+Py(y) = Sum( px(x) ) 
+    in {x|g(x)=y}
+
+weighted    有利于
+
+E[X] = Sum(x p(x))
+torque  扭矩
+
+var(X) = E[ (X - E[X])^2 ]
+
+dispersion  分散
+
+standard deviation
+
+Y = aX + b
+E[Y] = aE[x] + b
+var[Y] = a^2var[X]
+
+var(X) = E[X^2] - (E[X])^2
+
+uniformly distributed
+E[x] = (a+b)/2;
+var[x] = [b-a][b-a+2]/12
+
+E[x^2] = (n+1)(2n+1)/6
+
+babular method
+
+linear:
+    E[aX + bY + c] = aE[X] + bE[Y] + c
+
+analogously
+linearity
+
+
+P(A) = sumof(P[{X=x} n A])
+
+pertain
+scrutinize  仔细检查
 ```
