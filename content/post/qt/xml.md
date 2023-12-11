@@ -4,6 +4,44 @@ date: 2023-09-22T13:40:54+08:00
 tags: [qt]
 ---
 
+# 示例
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<!-- some comment -->
+<!DOCTYPE a [
+<!ENTITY reg "&#174;">
+<!ENTITY diams "&#9830;">
+]>
+<a>
+        <name>abc</name>
+        <age>&reg;</age>
+        <grade>&diams;</grade>
+		<script>
+<![CDATA[
+function matchwo(a,b)
+{
+if (a < b && a < 0) then
+  {
+  return 1;
+  }
+else
+  {
+  return 0;
+  }
+}
+]]>
+		</script>
+
+</a>
+```
+
+
+# 解析 XML 的三种方式
+- QXmlStreamReader
+- DOM
+- SAX
+
 #### token 类型
 tokenString:
     - StartDocument
