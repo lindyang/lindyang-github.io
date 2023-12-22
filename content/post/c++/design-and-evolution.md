@@ -361,5 +361,27 @@ essence 本质
 dread 畏惧
 paternalism 家长式统治，家长作风
 outraged 义愤填膺的
-
+complication
+terseness 简洁；精练
+fascist 法西斯
+deprecate 反对；抨击
+mimic 模仿
+disambiguate 消除
+subtlety 细微差别
+fumble 笨手笨脚
+eventual 最终的
+rationale 根本原因，逻辑依据
+mess
+boon 裨益，优势，有用的东西
+ridicule 嘲笑，奚落
+trivia 琐事
+agony 剧痛，创痛；痛楚，苦难
+perversity 邪恶；任性；性变态
+insulate 使隔热，使隔音，使绝缘
+marginally 稍微
+stubborn
+detriment 损害, 伤害; 造成损害
+immensely 极其，非常
+well-chosen 精选的；适当的
+degenerate 
 
