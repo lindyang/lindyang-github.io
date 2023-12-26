@@ -11,7 +11,7 @@ mutate 变化
 
 grapevine
 
-tackled
+tackle
 
 implication
 
@@ -197,7 +197,7 @@ thesis 论文  [ˈthē-səs ]
 
 laboratory 实验室，实验大楼
 
-delimited 限定
+delimite 限定
 
 mainframe 主机
 
@@ -297,13 +297,13 @@ dogma 教条，信条，教义
 
 pundit 专家；博学者；梵文学者
 
-reinforced
+reinforce
 
 essayist 论说文作家，杂文作家，散文家
 
 outlaw 取缔
 
-refrained 克制
+refrain 克制
 
 ruthless 无情的，冷酷的, 坚决的，果断的
 
@@ -375,7 +375,7 @@ conjecture 臆测
 
 cramped 用夹钳夹；约束, 狭窄的；难懂的；难辨的
 
-formulated 规划；用公式表示
+formulate 规划；用公式表示
 
 overshot
 
