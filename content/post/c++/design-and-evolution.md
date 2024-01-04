@@ -19,7 +19,7 @@ overall
 
 overload
 
-`tribute 礼物, 贡品
+'tribute 礼物, 贡品
 
 clarification 澄清，阐明；净化
 
@@ -27,19 +27,19 @@ retrospective 回顾
 
 exhaustion 筋疲力尽 zhen
 
-`controversy 争议
+'controversy 争议
 
 delegation
 
 refinement 改良
 
-repli`cation 复制
+repli'cation 复制
 
 implication 影响
 
-re`sumption 恢复
+re'sumption 恢复
 
-propa`gation 传播
+propa'gation 传播
 
 primitive
 
@@ -47,13 +47,13 @@ compatibility 兼容性
 
 modesty 谦虚
 
-pre`posterous,ness 荒谬
+pre'posterous,ness 荒谬
 
-inno`vation 创新
+inno'vation 创新
 
 preposterous
 
-dra`conian 严厉
+dra'conian 严厉
 
 modest 适中
 
@@ -65,7 +65,7 @@ retrospective 回顾展
 
 abhor 憎恨, əpr
 
-re`visionist 修正主义的
+re'visionist 修正主义的
 
 straitjacket 紧身衣
 
@@ -77,11 +77,11 @@ harsh 严厉的，残酷的
 
 irrelevant
 
-`controversy 争论
+'controversy 争论
 
-`hazardous 危险的，有害的；碰运气的
+'hazardous 危险的，有害的；碰运气的
 
-over`look 忽视
+over'look 忽视
 
 vague
 
@@ -91,9 +91,9 @@ bias 偏见
 
 deem 认为
 
-chrono`logical 时间顺序
+chrono'logical 时间顺序
 
-chro`nology 年表
+chro'nology 年表
 
 substantially 大量地
 
@@ -137,9 +137,9 @@ detached 超然的
 
 impartial 公正
 
-imparti`ality
+imparti'ality
 
-gene`rality 普遍性
+gene'rality 普遍性
 
 recollection 回忆
 
@@ -169,13 +169,13 @@ rationale 根本原因，逻辑依据
 
 polymorphism 多态性
 
-a`ddendum 附录，附件
+a'ddendum 附录，附件
 
 memorandum 协议备忘录
 
 critique 评论；批判
 
-sym`posium 专题研讨会
+sym'posium 专题研讨会
 
 unifying 使统一
 
@@ -203,7 +203,7 @@ mainframe 主机
 
 inherent 内在的
 
-`trivially 平凡地;平凡;琐细地
+'trivially 平凡地;平凡;琐细地
 
 invariably 始终如一地，一贯地
 
