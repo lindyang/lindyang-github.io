@@ -5,9 +5,9 @@ tags: [c++]
 ---
 
 
-recollection 回忆
+recollection
 
-mutate 变化
+mutate
 
 grapevine
 
@@ -237,7 +237,7 @@ port 移植
 
 depart from
 
-supervisor
+'supervisor
 
 prominent 著名的
 
@@ -249,7 +249,7 @@ subscribe to 赞同
 
 monument
 
-Euclid 欧几里德
+Euclid ju
 
 reputedly 据说
 
@@ -257,11 +257,11 @@ evict
 
 pragmatic 务实的
 
-aesthetic 审美的, 美学
+aesthetic e 审美的, 美学
 
 longstanding
 
-empiricist 经验主义者
+empiricist ɪm 经验主义者
 
 idealist 
 
@@ -269,7 +269,7 @@ mysticist 神秘主义者
 
 Aristotle 亚里士多德
 
-Plato
+Plato eɪ
 
 Hume
 
@@ -319,7 +319,7 @@ ephemeral 短暂的
 
 skeptic 疑论者，怀疑主义者
 
-fatalistic 宿命论的
+fatalistic 宿命论的 eɪ
 
 status quo 现状
 
@@ -423,7 +423,7 @@ cog 齿轮
 
 utmost 极度的，最大的
 
-theoretician
+theore'tician
 
 perfectionist
 
@@ -508,3 +508,193 @@ immensely 极其，非常
 well-chosen 精选的；适当的
 
 degenerate 
+
+counterintuitive
+
+grounding
+
+harbor
+
+irrational
+
+crudest
+
+concatenation
+
+counterweight
+
+terminology
+
+minimalistic
+
+obscure
+
+fraud
+
+unilaterally
+
+deem
+
+conclusive
+
+circumvention
+
+competent
+
+deliberate
+
+tampering
+
+finer-grain
+
+outweigh
+
+acquaint
+
+insufficient
+
+notational
+
+recompilation
+
+precursor
+
+curb
+
+prolife'ration
+
+nuisance
+
+aversion
+
+redundant
+
+featurism
+
+pragmatic
+
+sophisticated
+
+stillborn
+
+competent
+
+indulge
+
+embodying
+
+conventional
+
+counteract
+
+captive
+
+bureau'cratic
+
+quagmire
+
+hoard
+
+blackboard
+
+elaborate
+
+knack
+
+arche'typical
+
+folklore
+
+inflate
+
+3.1
+
+condemn
+
+indefinitely
+
+dilemma
+
+explosive
+
+undergo
+
+reap
+
+insulting
+
+courtesy
+
+institutional
+
+eminently
+
+adjective
+
+fertile
+
+definite
+
+embark
+
+ample
+
+prospective
+
+spur
+
+intermediate
+
+overhead
+
+deduce
+
+inferior
+
+irony
+
+revised
+
+consci'entious
+
+pre'eminent
+
+troublesome
+
+affinity ɪ
+
+supplement ʌ
+
+'trickery
+
+insufferable
+
+rudi'mentary
+
+nuisance
+
+aversion
+
+lobby
+
+comfort
+
+interim
+
+ar'chaic
+
+shipment
+
+conform
+
+corporate
+
+flop -
+
+surge -
+
+commercially
+
+originate
+
+cleanup
