@@ -699,6 +699,80 @@ originate
 
 cleanup
 
+
+### 16
+
+hitchhiker
+
+Galaxy
+
+innumerable
+
+en route to
+
+formulation
+
+constraining
+
+approximate
+
+zealous
+
+clamor
+
+catastrophic
+
+warrant
+
+aversion
+
+despair
+
+resilient
+
+contentious
+
+ably
+
+vocal
+
+horrendous
+
+trivialize
+
+concoct
+
+intensity
+
+soundness
+
+seductive
+
+inquiry
+
+endorse
+
+commonplace
+
+prescription
+
+preclude
+
+bemoan
+
+equivalent
+
+de facto
+
+subvert
+
+bloat
+
+unwound
+
+reliance
+
+
 ### 17
 
 grapple
