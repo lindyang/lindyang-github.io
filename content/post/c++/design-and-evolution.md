@@ -699,6 +699,77 @@ originate
 
 cleanup
 
+### 15
+
+mandate
+
+warped
+
+founded
+
+defy
+
+detriment
+
+realistic
+
+confined
+
+gut
+
+optimal
+
+competing head on
+
+sloppy
+
+mat
+
+shoehorn
+
+terse
+
+gross
+
+curb
+
+bloat
+
+trailing
+
+annoyance
+
+tempting
+
+paraphrase
+
+overreliance
+
+nag
+
+amenable
+
+sorely
+
+glorious
+
+augmented
+
+clinch
+
+howl
+
+protest
+
+conservative
+
+anomalous
+
+crude
+
+comprehension
+
+
 
 ### 16
 
