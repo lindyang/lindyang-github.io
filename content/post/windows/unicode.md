@@ -74,3 +74,11 @@ Windows 字符串函数
 
 资源是 Unicode
 
+
+一般 Windows 文件包含汉字:
+- Character Set: Use Multi-Byte Character Set
+- 文件保存为 Unicode(UTF8 with signature) - Codepage 65001
+- HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+- WriteConsole(hOut, pszText, wcslen(pszText), NULL, NULL);
+- /source-charset:utf-8 /execution-charset:gbk
+- #pragma execution_character_set("utf-8")
