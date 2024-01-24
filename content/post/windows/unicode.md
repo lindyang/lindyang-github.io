@@ -75,10 +75,12 @@ Windows 字符串函数
 资源是 Unicode
 
 
+Win10系统中，默认编码就是GBK，所以，MSVC默认把文件当做GBK编码读入
 一般 Windows 文件包含汉字:
-- Character Set: Use Multi-Byte Character Set
-- 文件保存为 Unicode(UTF8 with signature) - Codepage 65001
+- 要么保存为 gb2312, 要么保存为 Unicode(UTF8 with signature) - Codepage 65001
+- Character Set: 无所谓
 - HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
-- WriteConsole(hOut, pszText, wcslen(pszText), NULL, NULL);
+- WriteConsoleW(hOut, pszText, wcslen(pszText), NULL, NULL);
 - /source-charset:utf-8 /execution-charset:gbk
 - #pragma execution_character_set("utf-8")
+- SetConsoleOutputCP(CP_UTF8)
