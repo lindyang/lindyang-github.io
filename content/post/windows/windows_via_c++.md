@@ -290,7 +290,7 @@ Link下的 System 设置为 Not Set;
 - 运行期的全局变量进行初始化
 - 内存单元分配函 & 内存栈进行初始化
 - 全局和静态 C++ 类对象调用构造函数
-int APIENTRY _tWinMain(
+	int APIENTRY _tWinMain(
 	HINSTANCE hInstance, // exe or dll 独一无二的实例句柄(基本地址空间的值)
 	 HINSTANCE hPrevInstance,  // 16位
 	 LPTSTR    lpCmdLine,  // 不包含执行文件的名字, 可写但是不建议
@@ -427,3 +427,263 @@ ExitThread 只终止主线程;
 BOOL GetExitCodeProcess;  // STILL_ACTIVE = 0x103;
 
 进程间通信: 动态数据交换(DDE), OLE, 管道, 邮箱;
+
+
+
+=== 作业 ===
+
+CreateProcess(..., CREATE_SUSPENDED, ...);   // CREATE_BREAKAWAY_FROM_JOB
+
+AssignProcessToJobObject(hjob, pi.hProcess); 
+
+ResumeThread(pi.hThread);
+
+CloseHandle(pi.hThread);
+
+
+
+CloseHandle(hjob);  // 会让 name 与 job 失去联系
+
+
+
+SetInformationJobObject:
+
+- 基本
+  - JOB_OBJECT_BREAKAWAY_OK 新生成的进程可以在作业外部运行
+  - JOB_OBJECT_SILENT_BREAKAWAY_OK, 重点在 SILENT, 没有其他 flags 依赖
+  - JOB_OBJECT_LIMIT_PRESERVE_JOB_TIME
+- 扩展
+- UI
+- 安全
+
+SchedulingClass 是在 PriorityClass 相等下才进行比较, 越大越容易调度
+
+BOOL UserHandleGrantAccess(hUserObj, hjob, fGrant) 打破 UI 限制;  // 不能自己给自己赋能.
+
+安全限制无法取消;
+
+QueryInformationJobObject(NULL, ...)  // 本进程所在的作业
+
+CREATE_BREAKAWAY_FROM_JOB标志调用CreateProcess函数，但该作业并没有打
+开**JOB_OBJECT_LIMIT_BREAKAWAY_OK** 标志，那么CreateProcess函数运行失败;
+
+BOOL TerminateJobObject(HANDLE hJob, UNIT uEixtCode); // TerminateProcess for every process;
+
+更加通用的 BOOL GetProcessIoCounters(HANDLE hProcess, PIO_COUNTERS pIoCounters);
+
+_alloca()  // malloca.h 
+
+Performance Data Helper (PDH.dll)
+
+Microsoft Management Console(MMC) / Performance Monitor Snap-In;
+
+- mmc -> 文件 perfmon.msc -> 性能监视器 -> 添加计数器
+
+只能为已经赋予名字的作业获取性能计数器信息.
+
+SetInformationJobObject函数，使作业对象恢复未通知状态，并为作业赋予更多的 CPU时间;
+
+ I/O 完成端口内核对象，并将作业对象或多个作业对象与完成端口关联起来
+
+```
+JOBOBJECT_ASSOCIATE_COMPLETION_PORT joacp;
+joacp.CompletionKey = 1; // Unique ID
+joacp.CompletionPort = hIOCP;  //  CreateIoCompletionPort
+SetInfomationJobObject(hJob, JobObjectAssociateCompletionPortInformation, &joacp, sizeof(joacp));
+```
+
+QueryInformationJobObject 检索`完成关键字`和`完成端口`机会很少
+
+```
+BOOL GetQueuedCompletionStatus(
+  [in]  HANDLE       CompletionPort,
+        LPDWORD      lpNumberOfBytesTransferred,  // 发生的事件
+  [out] PULONG_PTR   lpCompletionKey,  // ID
+  [out] LPOVERLAPPED *lpOverlapped,  // PID
+  [in]  DWORD        dwMilliseconds
+);
+```
+
+通知JOB时间到期
+
+```
+JOBOBJECT_END_OF_JOB_TIME_INFORMATION joeojti;
+joeojti.EndOfJobTimeAction = JOB_OBJECT_POST_AT_END_OF_JOB;
+SetInformationJobObject(hJob, JobObjectEndOfJobTimeInformation, &joeojti, sizeof(joeojti));
+```
+
+DebugBreak();
+
+CopyMemory(...);
+
+_beginthreadex();
+
+PtrToUlong();
+
+__int64: %I64u, %I64d;
+
+chMB;
+
+
+
+===== 线程的基础知识 ====
+
+句柄表依赖于每个进程而不是每个线程存在;
+
+线程只有一个内核对象和一个堆栈;
+
+有时在不同的线程上创建不同的窗口是有用的，不过这种情况确实非常少见:
+
+- Windows Explorer为每个文件夹窗口创建了一个独立的线程
+
+CreateThread 是 Windows 的函数, 写 C/C++ 还是用 _beginthreadex(`_endthreadex`);
+
+[cbStack]
+
+- `/STACK:[reserve][,commit]`  // link, 虚拟/物理
+
+新线程和调用 C r e a t e T h r e a d的线程可以同时执行:
+
+```
+int x;
+DWORD dwThreadID;
+HANDLE hThread = CreateThread(NULL, 0, SecondThread, (PVOID)&x, 0, &dwThread);
+CloseHandle(hThread);
+// BUG
+return 0;
+```
+
+[fdwCreat]
+
+- CREATE_SUSPENDED
+
+[pdwThreadID]
+
+- Win95, Win98 不能为 NULL
+
+ExitThread;
+
+- C++资源（如 C++类对象）将不被撤消
+
+TeminateThread;
+
+- 异步, 使用 WaitForSingleObject
+- 拥有线程的进程终止运行之前，系统不撤消该线程的堆栈(贴心的微软)
+- DLL 不接收通知
+
+系统将线程的退出代码（在线程的内核对象中维护）设置为线程函数的返回值
+
+[线程终止运行时发生的操作]
+
+- 撤销窗口, 卸载挂钩
+- STILL_ACTIVE -> exitCode
+- 线程内核对象的状态变为已通知
+
+GetExitcodeThread 获取退出码;
+
+[线程内核对象]
+
+- IP: VOID BaseThreadStart();
+
+  - 在线程函数中建立一个结构化异常处理（SEH）帧，这样，在线程执行时产生的任何异常情
+    况都会得到系统的某种默认处理
+
+- ```
+  VOID BaseThreadStart(PTHREAD_START_ROUTINE pfnStarAddr, PVOID pvParam) {
+    __try {
+      ExitThread((pfnStartAddr)(pvParam));
+    }
+    __except(UnhandledExceptionFilter(GetExceptionInformation())) {
+      ExitProcess(GetExceptionCode());
+    }
+  }
+  ```
+
+  
+
+结构化异常处理（SEH）帧
+
+[进程的`主线程`]
+
+```
+VOID BaseProcessStart(PROCESS_START_ROUTINE pfnStartAddr) {
+  __try {
+    ExitThread((pfnStartAddr)());
+  }
+  __except(UnhandledExceptionFilter(GetExceptionInformation())) {
+    ExitProcess(GetExceptionCode());
+  }
+}
+```
+
+[c/c++运行期库]
+
+- LibC.lib: single + static (default)
+- LibCD.lib: + debug
+- LibCMt.lib: + multi
+- LibCMtD.lib: + debug
+- MSVCRt.lib: 动态链接MSVCRt.dll库的发行版的输入库
+- MSVCRtD.lib: MSVCRtD.dll, 同时支持单线程应用程序和多线程应用程序
+
+[没有考虑多线程]
+
+```
+errno、_doserrno、strtok、_wcstok、strerror、
+_strerror、tmpnam、tmpfile、asctime、_wasctime、gmtime、_ecvt和_fcvt
+```
+
+若要创建一个新线程，绝对不要调用操作系统的 CreateThread函
+数，必须调用C/C++运行期库函数_beginthreadex;
+
+[p132]
+
+_beginthreadex函数只存在于 C/C++运行期库的多线程版本中;
+
+[线程的运行]
+
+BaseThreadStart -> _threadstartex -> 初始 _piddata 并关联
+
+-> SEH;
+
+
+
+TlsSetValue;
+
+SEH 是指结构化异常处理（Structured Exception Handling）
+
+避免直接调用 ExitThread, 是因为 tiddata 得不到释放(直到整个进程终止).
+
+建议使用 _endthreadex;
+
+[编译命令]
+
+/MT, /MD 会让编译器定义 _MT 标识符
+
+// 伪句柄
+
+HANDLE GetCurrentProcess();
+
+HANDLE GetCurrentThread();
+
+DWORD GetCurrentProcessId();
+
+DWORD GetCurrentThread();
+
+伪句柄变成实句柄(线程句柄, 进程句柄都可以)
+
+DuplicateHandle(
+
+​	GetCurrentProcess(),
+
+​	GetCurrentThread(),
+
+​    GetCurrentProcess(),
+
+​    &hThreadParent,
+
+   0, FALSE, DUPLICATE_SAME_ACCESS
+
+)
+
+CloseHandle(hThreadParent);
+
