@@ -542,7 +542,7 @@ CreateThread 是 Windows 的函数, 写 C/C++ 还是用 _beginthreadex(`_endthre
 
 - `/STACK:[reserve][,commit]`  // link, 虚拟/物理
 
-新线程和调用 C r e a t e T h r e a d的线程可以同时执行:
+新线程和调用 CreateThread的线程可以同时执行:
 
 ```
 int x;
@@ -687,3 +687,10 @@ DuplicateHandle(
 
 CloseHandle(hThreadParent);
 
+第7章 线程的调度、优先级和亲缘性
+
+DWORD ResumeThread(HANDLE hThread);
+
+CREATE_SUSPENDED
+
+DOWRD SuspendThread(HANDLE hThread);
