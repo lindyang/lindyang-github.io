@@ -45,3 +45,13 @@ sed '/^ *\/image-content:/{
 }' file;
 ```
 
+```
+re_m = re.compile(r"""
+            ^Device\ management\ user\ (\S+):$
+            (?:\n^\ .+)+
+            \n^\ +Service\ type:\ +\S*Terminal\S*$
+            (?:\n^\ .+)+
+            \n^\ +User\ role\ list:\ +network-admin$
+        """, re.X | re.M)
+users = re.findall(re_m, ret)
+```
