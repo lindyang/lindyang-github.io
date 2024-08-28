@@ -34,7 +34,7 @@ class NonBlankRequired(InputRequired):
 
 class KeyOptional(Optional):
     def __call__(self, form, field):
-        if not field.raw_data:
+        if field.raw_data == []:
             field.errors[:] = []
             raise StopValidation()
 
@@ -50,6 +50,8 @@ class BaseForm(Form):
         locales = ['zh_CN']
 
         def bind_field(self, form, unbound_field, options):
+            if unbound_field.field_class.__name__ in ["FieldList", "PasswordField"]:
+                return unbound_field.bind(form=form, **options)
             filters = unbound_field.kwargs.get('filters', [])
             filters.append(_strip_filter)
             return unbound_field.bind(form=form, filters=filters, **options)
@@ -58,6 +60,15 @@ class BaseForm(Form):
     def errors(self):
         # f.label.text 获得汉字
         return {label: f.errors[0] for label, f in self._fields.items() if f.errors}  # pylint: disable=no-member
+
+
+class AnyMixin:
+    def non_exists(self):
+        return not any(f.raw_data != [] for f in self._fields.values() if f.name != 'id')
+
+    @property
+    def data(self):
+        return dict((name, f.data) for name, f in self._fields.items() if f.raw_data != [])
 
 
 class PaginateForm(BaseForm):
