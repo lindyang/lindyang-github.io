@@ -34,7 +34,7 @@ class NonBlankRequired(InputRequired):
 
 class KeyOptional(Optional):
     def __call__(self, form, field):
-        if field.raw_data == []:
+        if field.raw_data in ([], None):
             field.errors[:] = []
             raise StopValidation()
 
