@@ -24,3 +24,58 @@ sun is out, shimmering, scallop, chirp, nail, bubblestand, racket, sue thing, ta
 ripped pants:
 stinky, puddle, inhabitant, rush off, castle, pepperoni, lift some weight, sink, way to go, campfire, marshmallow, rip, indigo, hilarious, spike over, restless, split my sides, i could use a hand, you still got it, ripple, hysterically, burger, announcer, surf up, trademark layback, wipe out, washed up, telescope, holy shit paste, flip him over, unconsious, various animes, shed a tear upon, main character, tailor, abruptly, had me worried sick, on the loose, put on, sunburn, bun, blow it all sky-high, spare a passing glance, clown, mope around, curse, winding up with no one, a lot less fun, be true to yourself, righteous, sign my pants, buddy
 ```
+
+```
+TODO
+roam, eager, fix him up, specimen, shove, scream in pain, bang look-a-like,
+raise above, hover over, cheer for on, zap, band-aid, easter, nervously,
+motorized, run into, jar, mad, in comes, cast comes off, attire,
+```
+
+```
+monsieur, ingredient, mustard, squirt, hanunted, stab, alas, pirate, ghost,
+plankton, booty, krab, run sb out of business, saucer, chum bucket, 
+you'll pay for this, looks around, step on, blasted barnacle, acquaintance,
+invertebrate, everything works out, compartment, sparkle, thumb, blow out the candle,
+booster seat, tender, delicious, get your hands on, laugh along with it, 
+flip it over, swine, tape it down, elaborate, antenna, mediocre, pretentious, insignificant,
+snidely, protozoa's waste, nonsense, hand it over, brace yourself, labrador, retriever,
+dramatic, weed, impressed, lever, slip off, tasty, scrumptious, pickle, lettuce, fluffy,
+this stinks, swing open and close a few times, porous freak, 
+```
+
+```
+Anughty Nautical Neighbors
+
+souffle, gargling, tuxedo, giggle, irritated, pop, dumb, misfortune, 
+frown, raspberry, gasp, dweller, dummy, turkey, lawn chair, turn around,
+slam, squish, accordion, choke, pass out, CPR, suction, pop up, with a blank stare,
+easter, solitude, bench, right off the bat, break his back, threw out, hang on,
+rip off, speedo, crack, bassinet, stinky, rotten, filthy, steaming red, in the tub,
+rubber, stunning, lousy, maniac, setup, flick, all out of pop, hiccup, burp, jealous,
+pathetic
+```
+
+```
+Boating School
+
+fling, unicycle, dumpster, bow, stern, starboard, port, skipper,
+deck, cabin, galley, keel, secure herself tightly, track,
+floor it, accelerator, spectator, walkie-talkie, star ranger,
+not in the mood, antenna, stick out, do you read,
+undergarment, bingo, siren, lever, floor it, gracious, crashed,
+clipboard, ramp, on the course, spectacular, take a hold, EMTs,
+```
+
+```
+pizza Delivery
+
+leap for, snatch, ahoy, right over, sneak over smiling big,
+not what I had in mind, bumper, urchins, uncap, inhale, inspection,
+give me the wheels, trip over, hitchhike, thanks to, get carried around,
+gasp, go of the pizza, parachute, dommed, moss, hardship, coral,
+spit out, peek, pepperoni, one way or another, cut it out, boulder,
+lousy hitchhiker, algae, run over, dying for, kelp, ain't, 
+on the house, in one bite, aching, tentacle, nematode, bounce to, 
+```
+
